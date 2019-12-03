@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <ul>
+      <!--<li><a class="active" href="#home">Home</a></li> <li style="float:right"><a href="#about">About</a></li>-->
+      <li>
+        <button id="populationCtr" onclick="populateValues()">
+          Generate Testing Array
+        </button>
+      </li>
+      <li>
+        <button id="BubbleCtr" onclick="callRespectiveSort('Bubble')">
+          Bubble Sort
+        </button>
+      </li>
+      <li>
+        <button id="SelectionCtr" onclick="callRespectiveSort('Selection')">
+          Selection Sort
+        </button>
+      </li>
+      <li>
+        <button id="MergeCtr" onclick="callRespectiveSort('Merge')">
+          Merge Sort
+        </button>
+      </li>
+      <li>
+        <button id="QuickCtr" onclick="callRespectiveSort('Quick')">
+          Quick Sort
+        </button>
+      </li>
+      <li>
+        <div style="padding-top: 15px;" class="slidecontainer">
+          <input
+            type="range"
+            min="4"
+            max="59"
+            value="4"
+            class="slider"
+            id="barNums"
+          />
+        </div>
+      </li>
+      <li>
+        <p style="color: white;">Bars: <span id="barsNum"></span></p>
+      </li>
+      <li>
+        <div style="padding-top: 15px;" class="slidecontainer">
+          <input
+            type="range"
+            min="10"
+            max="500"
+            value="10"
+            class="slider"
+            id="timeTaken"
+          />
+        </div>
+      </li>
+      <li>
+        <p style="color: white;">Time in ms: <span id="timeNum"></span></p>
+      </li>
+    </ul>
+    <canvas id="sortingAnimation"></canvas>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
