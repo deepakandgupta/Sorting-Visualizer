@@ -39,6 +39,7 @@ timeT.oninput = function() {
 console.log(maxBarNum);
 
 ctx.fillRect(0, 0, canvas.width, canvas.height);
+populateValues();
 function populateValues() {
   clearCanvas();
   values = [];
