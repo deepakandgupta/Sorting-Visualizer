@@ -541,6 +541,7 @@ function enableButtons() {
   document.getElementById("SelectionCtr").disabled = false;
   document.getElementById("MergeCtr").disabled = false;
   document.getElementById("QuickCtr").disabled = false;
+  document.getElementById("timeTaken").disabled = false;
 }
 function disableButtons() {
   document.getElementById("populationCtr").disabled = true;
@@ -548,4 +549,5 @@ function disableButtons() {
   document.getElementById("SelectionCtr").disabled = true;
   document.getElementById("MergeCtr").disabled = true;
   document.getElementById("QuickCtr").disabled = true;
+  document.getElementById("timeTaken").disabled = true;
 }
